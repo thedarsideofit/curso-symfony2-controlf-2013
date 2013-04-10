@@ -1,0 +1,15 @@
+g4_inventory_inventory_homepage:
+    pattern:  /usuarios/{name}
+    defaults: { _controller: G4InventoryInventoryBundle:Usuarios:index }
+
+index:
+    pattern: /items
+    defaults: { _controller: G4InventoryInventoryBundle:Items:index }
+
+index:
+    pattern: /prestamos
+    defaults: { _controller: G4InventoryInventoryBundle:Prestamos:index }
+
+index:
+    pattern: /configuraciones
+    defaults: { _controller: G4InventoryInventoryBundle:Configuraciones:index }

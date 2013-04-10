@@ -1,0 +1,7 @@
+parameters:
+#    g4_inventory_inventory.example.class: G4\Inventory\InventoryBundle\Example
+
+services:
+#    g4_inventory_inventory.example:
+#        class: %g4_inventory_inventory.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
