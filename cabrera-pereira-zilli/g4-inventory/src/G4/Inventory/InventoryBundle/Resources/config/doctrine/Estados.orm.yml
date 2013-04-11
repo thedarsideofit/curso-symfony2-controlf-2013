@@ -1,0 +1,14 @@
+G4\Inventory\InventoryBundle\Entity\Estados:
+    type: entity
+    table: null
+    repositoryClass: G4\Inventory\InventoryBundle\Entity\EstadosRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

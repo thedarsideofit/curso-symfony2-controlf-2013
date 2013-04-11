@@ -1,0 +1,17 @@
+G4\Inventory\InventoryBundle\Entity\Imagenes:
+    type: entity
+    table: null
+    repositoryClass: G4\Inventory\InventoryBundle\Entity\ImagenesRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        ruta:
+            type: string
+            length: 255
+        item:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
