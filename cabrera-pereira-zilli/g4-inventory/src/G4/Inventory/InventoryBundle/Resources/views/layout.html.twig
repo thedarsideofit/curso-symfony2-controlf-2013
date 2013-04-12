@@ -1,0 +1,81 @@
+{% extends "::base.html.twig" %}
+
+{% block stylesheets %}
+  <link href="{{ asset('bundles/g4inventoryinventory/lib/bootstrap/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />
+  <link href="{{ asset('bundles/g4inventoryinventory/stylesheets/theme.css') }}" type="text/css" rel="stylesheet" />
+  <link href="{{ asset('bundles/g4inventoryinventory/lib/font-awesome/css/font-awesome.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('bundles/g4inventoryinventory/lib/jquery-1.7.2.min.js') }}"></script>
+  <script src="{{ asset('bundles/g4inventoryinventory/lib/bootstrap/js/bootstrap.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+  <div class="navbar">
+    <div class="navbar-inner">
+      <ul class="nav pull-right">
+        <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">Settings</a></li>
+        <li id="fat-menu" class="dropdown">
+          <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="icon-user"></i> Jack Smith
+            <i class="icon-caret-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="#">My Account</a></li>
+            <li class="divider"></li>
+            <li><a tabindex="-1" class="visible-phone" href="#">Settings</a></li>
+            <li class="divider visible-phone"></li>
+            <li><a tabindex="-1" href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="brand" href="#"><span class="first">G4</span> <span class="second">Inventory</span></a>
+    </div>
+  </div>
+
+  <div class="sidebar-nav">
+    <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-dashboard"></i>Items</a>
+    <ul id="dashboard-menu" class="nav nav-list collapse in">
+      <li><a href="#">Listar</a></li>
+      <li><a href="#">Agregar</a></li>
+      <li><a href="#">Eliminar</a></li>
+    </ul>
+
+    <a href="#error-menu" class="nav-header collapsed" data-toggle="collapse"><i class="icon-exclamation-sign"></i>Error Pages <i class="icon-chevron-up"></i></a>
+    <ul id="error-menu" class="nav nav-list collapse">
+      <li><a href="403.html">403 page</a></li>
+      <li><a href="404.html">404 page</a></li>
+      <li><a href="500.html">500 page</a></li>
+      <li><a href="503.html">503 page</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="header">
+      <div class="stats">
+        <p class="stat"><span class="number">53</span>tickets</p>
+        <p class="stat"><span class="number">27</span>tasks</p>
+        <p class="stat"><span class="number">15</span>waiting</p>
+      </div>
+
+      <h1 class="page-title">Dashboard</h1>
+    </div>
+
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a><span class="divider">/</span></li>
+      <li class="active">Dashboard</li>
+    </ul>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        {% block content %}{% endblock %}
+        <footer>
+          <hr>
+          <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
+          <p class="pull-right">A <a href="http://www.portnine.com/bootstrap-themes" target="_blank">Free Bootstrap Theme</a> by <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+
+          <p>&copy; 2012 <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+        </footer>
+      </div>
+    </div>
+  </div>
+{% endblock %}

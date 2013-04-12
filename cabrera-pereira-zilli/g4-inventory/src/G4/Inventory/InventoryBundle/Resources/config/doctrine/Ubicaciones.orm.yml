@@ -1,0 +1,17 @@
+G4\Inventory\InventoryBundle\Entity\Ubicaciones:
+    type: entity
+    table: null
+    repositoryClass: G4\Inventory\InventoryBundle\Entity\UbicacionesRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        nombre:
+            type: string
+            length: 255
+        descripcion:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

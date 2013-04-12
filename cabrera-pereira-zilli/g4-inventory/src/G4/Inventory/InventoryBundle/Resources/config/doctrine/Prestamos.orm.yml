@@ -1,0 +1,26 @@
+G4\Inventory\InventoryBundle\Entity\Prestamos:
+    type: entity
+    table: null
+    repositoryClass: G4\Inventory\InventoryBundle\Entity\PrestamosRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        apellido:
+            type: string
+            length: 255
+        nombre:
+            type: string
+            length: 255
+        dni:
+            type: string
+            length: 255
+        fechaPrestamo:
+            type: date
+        fechaDevolucion:
+            type: date
+        observaciones:
+            type: text
+    lifecycleCallbacks: {  }

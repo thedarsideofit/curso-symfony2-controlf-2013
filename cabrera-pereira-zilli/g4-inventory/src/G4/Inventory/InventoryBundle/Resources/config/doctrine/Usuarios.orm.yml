@@ -1,0 +1,26 @@
+G4\Inventory\InventoryBundle\Entity\Usuarios:
+    type: entity
+    table: null
+    repositoryClass: G4\Inventory\InventoryBundle\Entity\UsuariosRepository
+    fields:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+        apellido:
+            type: string
+            length: 255
+        nombre:
+            type: string
+            length: 255
+        username:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
