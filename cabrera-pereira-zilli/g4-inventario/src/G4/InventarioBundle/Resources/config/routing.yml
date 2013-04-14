@@ -1,3 +1,0 @@
-g4_inventory_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: G4InventarioBundle:Default:index }

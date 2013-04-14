@@ -1,4 +1,0 @@
-g4_inventory:
-    resource: "@G4InventarioBundle/Resources/config/routing.yml"
-    prefix:   /
-

@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: /home/miguel/www/g4-inventario/app/config/routing_dev.yml
