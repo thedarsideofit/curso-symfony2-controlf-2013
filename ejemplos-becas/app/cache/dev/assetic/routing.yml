@@ -1,5 +1,0 @@
-_assetic:
-    resource: .
-    type: assetic
-_app:
-    resource: /home/diego/www/ejemplos-becas/app/config/routing_dev.yml

@@ -1,5 +1,0 @@
-control_f_email:
-    resource: "@ControlFEmailBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
