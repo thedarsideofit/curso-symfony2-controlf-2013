@@ -1,0 +1,16 @@
+genemu_image:
+    resource: "@GenemuFormBundle/Resources/config/routing/image.xml"
+    
+control_f_genemu_demo:
+    resource: "@ControlFGenemuDemoBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+_main:
+    resource: "@PsPdfBundle/Resources/config/routing.yml"
+    prefix: pdf
+control_f_email:
+    resource: "@ControlFEmailBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

@@ -1,0 +1,32 @@
+{% extends '::base.html.twig' %}
+
+{% block stylesheets %}    
+    {{parent()}}
+    {{ form_stylesheet(form) }}
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ form_javascript(form) }}
+{% endblock %}
+
+{% block body -%}
+    <h1>Provincia creation</h1>
+
+    <form action="{{ path('provincia_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Create</button>
+        </p>
+    </form>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('provincia') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
+{% endblock %}
+    
+

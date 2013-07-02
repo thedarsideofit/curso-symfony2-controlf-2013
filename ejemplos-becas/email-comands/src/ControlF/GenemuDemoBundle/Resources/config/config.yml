@@ -1,0 +1,13 @@
+genemu_form:
+    select2: ~
+    date: ~    
+    image:
+        enabled:  true
+        selected: 'large'
+        filters:  ['rotate', 'bw', 'negative', 'sepia', 'crop']
+        thumbnails:
+            small:  [100, 100]
+            medium: [200, 200]
+            large:  [500, 500]
+            extra:  [1024, 768]
+    
