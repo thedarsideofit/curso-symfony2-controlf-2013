@@ -1,0 +1,20 @@
+control_fe_mail:
+    resource: "@ControlFEMailBundle/Controller/"
+    type:     annotation
+    prefix:   /email
+
+control_f_crawler_test:
+    resource: "@ControlFCrawlerTestBundle/Controller/"
+    type:     annotation
+    prefix:   /crawler
+
+control_f_catalogo:
+    resource: "@ControlFCatalogoBundle/Controller/"
+    type:     annotation
+    prefix:   /catalogo
+
+control_f_calculadora:
+    resource: "@ControlFCalculadoraBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /calculadora
+

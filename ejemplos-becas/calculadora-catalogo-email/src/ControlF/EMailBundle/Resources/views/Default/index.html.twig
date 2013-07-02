@@ -1,0 +1,22 @@
+<h1>Contáctenos</h1>
+{% if app.session.hasFlash('notice') %}
+        <div class="blogger-notice">
+            {{ app.session.flash('notice') }}
+        </div>
+   {% endif %}
+    {% if app.session.hasFlash('error') %}
+        <div class="blogger-notice">
+            {{ app.session.flash('error') }}
+        </div>
+    {% endif %}
+<form action="{{ path('email_contacto') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_errors(form) }}
+        {{ form_row(form.nombre) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.asunto) }}
+        {{ form_row(form.cuerpo) }}
+        {{ form_rest(form) }}
+
+    <input type="submit" />
+</form>
+

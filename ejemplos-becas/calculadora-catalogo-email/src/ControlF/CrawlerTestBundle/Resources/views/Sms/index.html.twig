@@ -1,0 +1,7 @@
+{% extends "AcmeDemoBundle::layout.html.twig" %}
+    {% block title "Captcha " %}
+        {% block content %}
+    		<img src ="{{ captcha }}" />    		
+        {% endblock %}
+
+{% set code = code(_self) %}
